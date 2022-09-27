@@ -1,0 +1,20 @@
+{
+  "name": "github-flow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusgugelmin/github-flow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusgugelmin/github-flow/issues"
+  },
+  "homepage": "https://github.com/viniciusgugelmin/github-flow#readme"
+}
