@@ -2,9 +2,6 @@
   "name": "github-flow",
   "version": "1.0.0",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {},
   "repository": {
     "type": "git",
