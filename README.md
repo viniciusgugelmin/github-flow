@@ -47,9 +47,19 @@
 
 Trabalho desenvolvido para a disciplina de Devops, ministrada pelo professor **Leandro Escobar** no curso de **Bacharelado de Sistemas de Informação** da **Universidade Positivo**. O trabalho consiste em criar um projeto utilizando o fluxo de trabalho do Github, com o objetivo de aprender a utilizar o Github como ferramenta de versionamento de código e também como ferramenta de gerenciamento de projetos, sem deixar de usar as boas práticas de desenvolvimento de software com Devops.
 
+<a href="https://github.com/viniciusgugelmin/github-flow/blob/master/docs/code-versioning.pdf">
+Cliques aqui para ver o fluxo de versionamento de código
+</a>
+
+<br>
+
 **(English)**
 
 Work developed for the Devops discipline, taught by professor **Leandro Escobar** in the **Information Systems Bachelor's Degree** course at **Positivo University**. The work consists of creating a project using the Github workflow, with the objective of learning to use Github as a code versioning tool and also as a project management tool, without forgetting the good practices of software development with Devops.
+
+<a href="https://github.com/viniciusgugelmin/github-flow/blob/master/docs/code-versioning.pdf">
+Click here to see the code versioning flow
+</a>
 
 <br>
 
