@@ -2,7 +2,11 @@
   "name": "github-flow",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "npx nodemon src/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/viniciusgugelmin/github-flow.git"
@@ -13,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/viniciusgugelmin/github-flow/issues"
   },
-  "homepage": "https://github.com/viniciusgugelmin/github-flow#readme"
+  "homepage": "https://github.com/viniciusgugelmin/github-flow#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "dotenv-cli": "^6.0.0",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1"
+  }
 }
