@@ -1,7 +1,7 @@
 class GetViniDataUseCase {
   execute() {
     return {
-      name: "Vinícius Kruchelski",
+      name: "Vinícius Kruchelski Gugelmin",
       age: 21,
     };
   }
