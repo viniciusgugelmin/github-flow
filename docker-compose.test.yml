@@ -1,0 +1,15 @@
+version: "3"
+services:
+  application-test:
+    container_name: application-test
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    ports:
+      - 5000:${PORT}
+    working_dir: /app
+    command: bash -c "npm test"
+    env_file:
+      - .env.test
+    volumes:
+      - ./src:/app/src
