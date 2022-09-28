@@ -1,0 +1,19 @@
+name: PullRequest
+on: [ pull_request ]
+env:
+  PORT: ${{ secrets.PORT }}
+jobs:
+  PullRequest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1
+        with:
+          envkey_PORT: ${{ secrets.PORT }}
+          file_name: .env.test
+      - name: Run CI build
+        run: npm run ci:build
+      - name: Run CI tests
+        run: npm run ci:test
