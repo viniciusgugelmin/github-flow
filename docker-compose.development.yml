@@ -1,0 +1,33 @@
+version: "3"
+services:
+  e-db-development:
+    container_name: e-db-development
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    volumes:
+      - my-db:/var/lib/mysql
+  e-application-development:
+    container_name: e-application-development
+    build:
+      context: .
+      dockerfile: Dockerfile.development
+    ports:
+      - ${PORT}:5000
+    working_dir: /app
+    command: bash -c "npm run dev"
+    env_file:
+      - .env.development
+    volumes:
+      - ./src:/app/src
+
+volumes:
+  my-db:
